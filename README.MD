@@ -15,65 +15,6 @@ You can search more of my E-skeletons docker projects and try to combine them in
 
 Down here you have example code for the events that this server provides:
 
-#### webrtc
-
-```js
-function logUser() { 
-	let userData = {
-		username: "client's username",
-		password: "client's password"
-	}
-
-	$ axios.post("https://yourNetworkPath:8888/webrtc/log_user", userData)
-	   	   .then((res) => console.log(res))
-}
-```
-
-#### Register
-
-```js
-function registerUser() {
-	let userData = {
-		username: "client's username",
-		password: "client's password",
-		passwordConfirmation: "client's confirmation password",
-		group: "admin" // defaults in "user"
-	}
-
-	axios.post("https://yourNetworkPath:8888/register/register_user", userData)
-	     .then((res) => console.log(res))
-}
-```
-
-#### Logout
-```js
-function logoutUser() {
-	let userData = {
-		username: "client's username",
-		password :"client's password"
-	}
-
-	$ axios.post("https://yourNetworkPath:8888/logout/logout_user", userData)
-		   .then((res) => console.log(res))
-}
-```
-
-#### User status
-
-```js
-
-function checkUserStatus() {
-	let userData = {
-		username: "client's username",
-		password :"client's password"
-	}
-
-	$ axios.post("https://yourNetworkPath:8888/status/user_status", userData)
-		   .then((res) => console.log(res))
-}
-
-```
-
 ### Tech
 
 E-skeleton-webrtc uses a number of open source projects to work properly:
