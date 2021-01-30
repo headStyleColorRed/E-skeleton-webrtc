@@ -8,7 +8,7 @@ services:
       - E-skeleton
     build: .
     ports:
-      - "8888:8888"
+      - "8893:8893"
   webrtc-mongo:
     container_name: webrtc_DB
     networks: 
